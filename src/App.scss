@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+$gray: #bcbcbc;
+
+.App {
+  font-family: 'Lato', sans-serif;
+}
+
+.events-container {
+  max-width: 80%;
+  margin: 0 auto;
+  margin-top: 15px;
+}
+
+.event-container {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  background-color: $gray;
+  margin-bottom: 10px;
+}
+
+.event-info {
+  margin: auto 0;
+}
+
+.event-image {
+  margin: auto 0;
+  margin-left: 15px;
+}
