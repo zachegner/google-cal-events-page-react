@@ -1,4 +1,4 @@
-import './App.css'
+import './App.scss'
 import EventsList from './components/EventsList'
 
 function App() {
