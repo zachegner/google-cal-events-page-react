@@ -1,13 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
 $gray: #bcbcbc;
+$dark-gray: #827272;
 
 .App {
   font-family: 'Lato', sans-serif;
 }
 
 .events-container {
-  max-width: 80%;
+  max-width: 50%;
   margin: 0 auto;
   margin-top: 15px;
 }
@@ -16,7 +17,6 @@ $gray: #bcbcbc;
   display: flex;
   flex-direction: row;
   gap: 30px;
-  background-color: $gray;
   margin-bottom: 10px;
 }
 
@@ -34,4 +34,8 @@ $gray: #bcbcbc;
 .event-image-container {
   margin: auto 0;
   margin-left: 15px;
+}
+
+h1 {
+  color: $dark-gray;
 }

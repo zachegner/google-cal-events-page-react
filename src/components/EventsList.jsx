@@ -84,8 +84,6 @@ useEffect(() => {
     loadEvents()
 }, [])
 
-/* loadEvents() */
-
 const createEvent = (event, i) => {
     return <Event key={i} event={event} />
 }
