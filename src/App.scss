@@ -22,9 +22,16 @@ $gray: #bcbcbc;
 
 .event-info {
   margin: auto 0;
+  margin-bottom: 10px;
 }
 
 .event-image {
+  width: 200px;
+  height: 200px;
+  margin: auto 0;
+}
+
+.event-image-container {
   margin: auto 0;
   margin-left: 15px;
 }
