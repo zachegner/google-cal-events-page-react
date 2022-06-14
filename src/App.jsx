@@ -1,4 +1,5 @@
 import './App.scss'
+import { useState } from 'react'
 import EventsList from './components/EventsList'
 
 function App() {
