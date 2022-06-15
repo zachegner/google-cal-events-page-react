@@ -8,7 +8,7 @@ $dark-gray: #827272;
 }
 
 .events-container {
-  max-width: 50%;
+  max-width: 65%;
   margin: 0 auto;
   margin-top: 15px;
 }
@@ -17,7 +17,7 @@ $dark-gray: #827272;
   display: flex;
   flex-direction: row;
   gap: 30px;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
 }
 
 .event-info {
@@ -26,9 +26,10 @@ $dark-gray: #827272;
 }
 
 .event-image {
-  width: 200px;
-  height: 200px;
+  width: 250px;
+  height: 250px;
   margin: auto 0;
+  border-radius: 2px;
 }
 
 .event-image-container {
@@ -36,6 +37,45 @@ $dark-gray: #827272;
   margin-left: 15px;
 }
 
+.info-btn {
+  background-color: #ffffff;
+  border: 1px solid $dark-gray;
+  padding: 12px 32px;
+  border-radius: 3px;
+  color: $dark-gray;
+  font-size: 14px;
+  font-weight: 500;
+  
+  &:hover {
+    background-color: $gray;
+    border-color: $gray;
+    color: black;
+  }
+}
+
+
 h1 {
   color: $dark-gray;
+  font-size: 1.8rem
+}
+
+@media screen and (max-width: 450px) {
+  .App {
+    font-size: .8rem;
+  }
+  .events-container {
+    max-width: 90%;
+  }
+  .event-container {
+    flex-direction: column;
+  }
+  .event-image-container {
+    margin: auto 0;
+    margin-left: 0;
+    width: 80%;
+  }
+  .event-image {
+    width: 100%;
+    height: auto;
+  }
 }
