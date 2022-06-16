@@ -1,10 +1,8 @@
-import Divider from "@mui/material/Divider";
 import { useState, useEffect } from "react";
-
 
 const Event = ({ event }) => {
 
-    const { name, description, start, end, location, image, dateRange, link } = event;
+    const { name, description, start, location, image, dateRange } = event;
 
     const [eventUrl, setEventUrl] = useState('');
     const [eventDescription, setEventDescription] = useState('');
@@ -36,11 +34,10 @@ const Event = ({ event }) => {
                     <h4>{dateRange}</h4>
                     <p>{newDesc}</p>
                     {location ? <h5>Held at: {location}</h5> : null}
-                    {eventUrl && <form action={eventUrl}>
+                    {eventUrl && <form target="_blank" rel="noreferrer noopener" action={eventUrl}>
                         <input className="info-btn" type="submit" value="EVENT LINK" />
                     </form>}
                 </div>
-
                 <br />
             </div>
             <hr className="solid"></hr>
