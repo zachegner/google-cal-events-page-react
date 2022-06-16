@@ -68,17 +68,11 @@ async function loadEvents(max = 10) {
       const data = await endpoint.json()
       const processedEvents = data.map(e => mapEventObject(e))
       setEvents(processedEvents)
-      
-      
-      /* processedEvents.map((event, i) => createEvent(event, i)).join('')
-      console.log(processedEvents) */
+
   } catch (error) {
-      {/* <p class="text-center text-3xl">Something went wrong...</p> */}
       console.log(error)
   }
 }
-
-
 
 useEffect(() => {
     loadEvents()

@@ -44,6 +44,12 @@ $dark-gray: #827272;
   margin-left: 15px;
 }
 
+.solid {
+  border: 0;
+  border-top: 1px solid #CCC;
+  margin-bottom: 35px;
+}
+
 .info-btn {
   background-color: #ffffff;
   border: 1px solid $dark-gray;
