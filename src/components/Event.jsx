@@ -33,8 +33,9 @@ const Event = ({ event }) => {
                 <div className="event-info">
                     <h1>{name ? name.toUpperCase() : "EVENT"}</h1>
                     <h2>{start.day}, {start.month} {start.date}</h2>
-                    <h4>{start.time}</h4>
+                    <h4>{dateRange}</h4>
                     <p>{newDesc}</p>
+                    {location ? <h5>Held at: {location}</h5> : null}
                     {eventUrl && <form action={eventUrl}>
                         <input className="info-btn" type="submit" value="EVENT LINK" />
                     </form>}

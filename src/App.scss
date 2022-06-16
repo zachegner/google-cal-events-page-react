@@ -78,6 +78,20 @@ h1 {
   }
   h1 {
     margin: 0;
+    font-size: 1.3rem;
+  }
+  h2 {
+    font-size: 1.2rem;
+    margin: 0;
+  }
+  h4 {
+    margin: 2px 0;
+  }
+  h5 {
+    margin: 5px 0;
+  }
+  p {
+    margin: 5px 0;
   }
   .events-container {
     max-width: 90%;
@@ -97,5 +111,9 @@ h1 {
   .event-image {
     width: 100%;
     height: auto;
+  }
+  .solid {
+    margin-top: 0;
+    margin-bottom: 20px;
   }
 }

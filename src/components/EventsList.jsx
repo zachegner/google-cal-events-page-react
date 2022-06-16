@@ -44,11 +44,11 @@ function mapEventObject(event) {
 
     let dateRange;
     if (startDate.date !== endDate.date) {
-        dateRange = `${startDate.month} ${startDate.date} - ${endDate.month} ${endDate.date}`
+        dateRange = `${startDate.date} - ${endDate.date}`
     } else if (!startDate.time) {
-        dateRange = `${startDate.month} ${startDate.date}`
+        dateRange = `${startDate.date}`
     } else {
-        dateRange = `${startDate.day}, ${startDate.time} - ${endDate.time}`
+        dateRange = `${startDate.time} - ${endDate.time}`
     }
     return {
         name: event.summary,
