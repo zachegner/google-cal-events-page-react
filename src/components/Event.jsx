@@ -25,7 +25,7 @@ const Event = ({ event }) => {
         <>
             <div className="event-container">
                 <div className="event-image-container">
-                    {!image ? <img className='placeholder-image' src="src/images/lostShoeOutline.png" alt="Lost Shoe Logo" /> : <img className="event-image" src={`https://drive.google.com/uc?export=view&id=${image[0].fileId}`} alt={`${name} Image`} />}
+                    {!image ? <img className='placeholder-image' src="./images/lostShoeOutline.png" alt="Lost Shoe Logo" /> : <img className="event-image" src={`https://drive.google.com/uc?export=view&id=${image[0].fileId}`} alt={`${name} Image`} />}
 
                 </div>
                 <div className="event-info">
